@@ -1,18 +1,12 @@
 import mongoose from 'mongoose';
-import cors from 'cors';
-const corsMiddleware = cors({
-    origin: 'https://auth-exwx.vercel.app', // Replace with your frontend URL
-    methods: ['GET', 'POST'], // Allow specific methods
-    allowedHeaders: ['Content-Type'], // Allow only certain headers
-  });
+
 const connectDb = (handler) => async (req, res) => {
-  const uri =process.env.uri;
+  const uri ='mongodb+srv://krishnajaswl:hello@cluster0.pbdkolm.mongodb.net/auth?retryWrites=true&w=majority&appName=Cluster0';
 
   try {
     if (mongoose.connections[0].readyState) {
       return handler(req, res);
     }
-    console.log("connected2");
 
     await mongoose.connect(uri, {
       useNewUrlParser: true,
@@ -26,4 +20,4 @@ const connectDb = (handler) => async (req, res) => {
   }
 };
 
-export default connectDb(corsMiddleware(handler));
+export default connectDb;
