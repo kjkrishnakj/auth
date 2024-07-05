@@ -1,20 +1,16 @@
 import React, { useEffect } from 'react'
 
 import Link from 'next/link'
-
+import logo from "../public/logo.png"
+import Image from 'next/image';
 import Head from "next/head";
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Image from 'next/image';
-const Login = (darkMode) => {
+const Login = ({darkMode}) => {
   const router = useRouter()
-  useEffect(() => {
-    if (localStorage.getItem('token')) {
-      router.push('/')
-    }
-  }, [])
+ 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -52,8 +48,8 @@ const Login = (darkMode) => {
 
 
       setTimeout(() => {
-
-        router.push('/')
+        
+        router.push('/home')
       }, 1000)
     toast.success("Logged in successfully 👍", { autoClose: 1000 })
 
@@ -69,8 +65,11 @@ const Login = (darkMode) => {
       <Head><title>Login</title></Head>
       <div className={`min-h-screen py-10 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'}`}>
         <div className="mt-1  sm:mx-auto sm:w-full sm:max-w-sm">
-        <img  className='mx-auto text-xl"' src="https://betterzila.com/wp-content/uploads/2022/10/betterzila-logov2.png" alt="" />
-          <h2 className={`mt-6 text-center text-2xl font-bold leading-9 tracking-tight ${darkMode ? ' text-white' : ' text-gray-900'} `}>Log in to your account</h2>
+        <div className="relative mx-auto text-xl h-24 w-22 bg-white rounded-full flex items-center justify-center">
+            <Image className="mx-auto text-xl" src={logo} alt="" style={{ width: '13rem' }} />
+
+          </div>
+          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight">Log in to your account</h2>
         </div>
 
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
@@ -95,7 +94,7 @@ const Login = (darkMode) => {
             </div>
 
             <div>
-              <button type="submit" onClick={handleSubmit} className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Login</button>
+              <button type="submit" onClick={handleSubmit} className="flex w-full justify-center rounded-md bg-yellow-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-yellow-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Login</button>
             </div>
           </form>
 
@@ -109,4 +108,4 @@ const Login = (darkMode) => {
   )
 }
 
-export default Login
+export default Login;
