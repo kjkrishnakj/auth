@@ -1,5 +1,10 @@
 import mongoose from 'mongoose';
-
+import cors from 'cors';
+const corsMiddleware = cors({
+    origin: 'https://auth-exwx.vercel.app', // Replace with your frontend URL
+    methods: ['GET', 'POST'], // Allow specific methods
+    allowedHeaders: ['Content-Type'], // Allow only certain headers
+  });
 const connectDb = (handler) => async (req, res) => {
   const uri =process.env.uri;
 
