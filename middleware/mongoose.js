@@ -26,4 +26,4 @@ const connectDb = (handler) => async (req, res) => {
   }
 };
 
-export default connectDb;
+export default connectDb(corsMiddleware(handler));
