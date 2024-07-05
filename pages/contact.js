@@ -11,8 +11,8 @@ const contact = () => {
           <Image className="mx-auto text-xl" src={logo} alt="" style={{ width: '13rem' }} />
 
         </div>
-        <div class=" flex justify-center mt-5 items-center">
-          <h1 class="title-font sm:text-4xl text-3xl  font-medium  text-gray-900 text-center">Contact Us</h1>
+        <div className=" flex justify-center mt-5 items-center">
+          <h1 className="title-font sm:text-4xl text-3xl  font-medium  text-gray-900 text-center">Contact Us</h1>
         </div>
 
         <div className="container px-5 py-20 mx-auto flex flex-col items-center">
