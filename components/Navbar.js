@@ -4,7 +4,7 @@ import logo from "../public/logo.png"
 import Image from 'next/image';
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [text, setText] = useState("login");
   const [email, setEmail] = useState("");
 const handleLogout=()=>{

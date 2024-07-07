@@ -64,7 +64,7 @@ const Login = ({darkMode}) => {
       <ToastContainer />
       
       <Head><title>Auth | Login</title></Head>
-      <div className={`min-h-screen py-10 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'}`}>
+      <div className={`min-h-screen py-10bg-gray-900 text-white'}`}>
         <div className="mt-1  sm:mx-auto sm:w-full sm:max-w-sm">
         <div className="relative mx-auto text-xl h-24 w-22 bg-white rounded-full flex items-center justify-center">
             <Image className="mx-auto text-xl" src={logo} alt="" style={{ width: '13rem' }} />
