@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+  import mongoose from 'mongoose';
 
 const connectDb = (handler) => async (req, res) => {
   const uri =process.env.uri;

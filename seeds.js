@@ -4,7 +4,7 @@ const path = require("path");
 const User = require("./models/User.js");
 require('dotenv').config();
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect(process.env.uri)
   .then(() => {
     console.log("Database connection successful");
   })
