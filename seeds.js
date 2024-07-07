@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const fs = require("fs");
 const path = require("path");
-const Users = require("./models/Users.js");
+const User = require("./models/User.js");
 require('dotenv').config();
 mongoose
   .connect(process.env.MONGO_URI)
@@ -35,7 +35,7 @@ const productsData = preprocessData(JSON.parse(rawProductData));
 const seedDatabase = async () => {
   try {
     
-    await Blogs.insertMany(productsData);
+    await User.insertMany(productsData);
     console.log("Product database seeding successful");
   } catch (err) {
     console.error("Database seeding error:", err);
