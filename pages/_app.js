@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar';
 import '@/styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     const mode = localStorage.getItem('mode');
