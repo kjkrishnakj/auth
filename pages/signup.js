@@ -45,7 +45,9 @@ const Signup = ({ darkMode }) => {
         }, 1000)
     }
 
-    return (
+    return (<>
+      <Head><title>Auth | Signup</title></Head>
+    
         <div className={`min-h-screen ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-900'}`}>
             <div className="flex flex-col justify-center px-6 py-12 lg:px-8">
                 <div className="sm:mx-auto sm:w-full sm:max-w-sm">
@@ -92,6 +94,8 @@ const Signup = ({ darkMode }) => {
                 </div>
             </div>
         </div>
+    </>
+
     );
 };
 

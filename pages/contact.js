@@ -2,9 +2,13 @@ import React from 'react';
 
 import logo from "../public/logo.png"
 import Image from 'next/image';
+import Head from 'next/head';
 
 const contact = () => {
   return (
+    <>
+      <Head><title>Auth | Contact</title></Head>
+
     <div className="min-h-screen flex justify-center items-center">
       <section className="text-gray-600 body-font">
         <div className="relative mx-auto text-xl h-24 w-22 bg-white rounded-full flex items-center justify-center">
@@ -52,6 +56,8 @@ const contact = () => {
         </div>
       </section>
     </div>
+    </>
+
   );
 };
 

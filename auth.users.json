@@ -1,0 +1,108 @@
+[{
+  "_id": {
+    "$oid": "66649ddfadda0b374141dbe6"
+  },
+  "name": "krishna ",
+  "email": "krishnajaswl@gmail.com",
+  "password": "123r",
+  "address": "",
+  "pincode": "",
+  "phone": "",
+  "createdAt": {
+    "$date": "2024-06-08T18:07:27.234Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-08T18:07:27.234Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6664b484adda0b374141dbee"
+  },
+  "name": "krishna ",
+  "email": "fewfw@gmail.com",
+  "password": "123",
+  "address": "",
+  "pincode": "",
+  "phone": "",
+  "createdAt": {
+    "$date": "2024-06-08T19:44:04.409Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-08T19:44:04.409Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6664b4a6adda0b374141dbf1"
+  },
+  "name": "krishna ",
+  "email": "krishna.jaiswal2022@vitstudent.ac.in",
+  "password": "123",
+  "address": "",
+  "pincode": "",
+  "phone": "",
+  "createdAt": {
+    "$date": "2024-06-08T19:44:38.952Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-08T19:44:38.952Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6664b70dadda0b374141dbf4"
+  },
+  "name": "krishna jaiswal",
+  "email": "krishnajaswlkj@gmail.com",
+  "password": "123",
+  "address": "",
+  "pincode": "",
+  "phone": "",
+  "createdAt": {
+    "$date": "2024-06-08T19:54:53.872Z"
+  },
+  "updatedAt": {
+    "$date": "2024-06-08T19:54:53.872Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6687cf16a641d51fa15f4a80"
+  },
+  "name": "fefsefef",
+  "email": "krishnajaswl2004@gmail.com",
+  "password": "efefewfe",
+  "address": "",
+  "pincode": "",
+  "phone": "",
+  "createdAt": {
+    "$date": "2024-07-05T10:46:46.420Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T10:46:46.420Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6687de94a641d51fa15f4a8e"
+  },
+  "name": "krishna 1234",
+  "email": "kj123r3rrfdcqwfq@gmail.com",
+  "password": "123",
+  "address": "",
+  "pincode": "",
+  "phone": "",
+  "createdAt": {
+    "$date": "2024-07-05T11:52:53.061Z"
+  },
+  "updatedAt": {
+    "$date": "2024-07-05T11:52:53.061Z"
+  },
+  "__v": 0
+}]
