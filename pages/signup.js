@@ -42,7 +42,7 @@ const Signup = ({ darkMode }) => {
         setName('')
         setPassword('')
         setTimeout(() => {
-            router.push('/login')
+            router.push(`${process.env.NEXT_PUBLIC_HOST}/login`)
         }, 1000)
     }
 

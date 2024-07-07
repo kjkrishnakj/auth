@@ -49,7 +49,7 @@ const Login = ({darkMode}) => {
 
       setTimeout(() => {
         
-        router.push('/home')
+        router.push(`${process.env.NEXT_PUBLIC_HOST}/home`)
       }, 1000)
     toast.success("Logged in successfully 👍", { autoClose: 1000 })
 
