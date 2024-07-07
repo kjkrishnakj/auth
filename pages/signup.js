@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from 'next/router'
+import Head from 'next/head';
 
 const Signup = ({ darkMode }) => {
     const router = useRouter()
@@ -28,7 +29,7 @@ const Signup = ({ darkMode }) => {
         toast.success("welcome " + name + " 🙃", { autoClose: 1000 })
         e.preventDefault()
         const data = { name: name, email, password }
-        let res = await fetch(`http://localhost:3000/api/signup`, {
+        let res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/signup`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
